@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="org.apache.log4j.xml" level="info"/>
+        <Logger name="UI-COMPONENTS" level="debug"/>
+        <Logger name="UI-CONTROLLERS" level="debug"/>
+        <Logger name="FILE-DUPLICATE-SERVICE" level="debug"/>
+        <Logger name="FILE-RETRIEVER-SERVICE" level="info">
+            <AppenderRef ref="STDOUT"/>
+        </Logger>
+        <Logger name="FILE-DIGEST" level="debug"/>
+        <Logger name="RESOURCE-MANAGER" level="debug"/>
+        <Root level="info">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.guajava.jdupmaster.fxml.controllers.MainController">
+   <children>
+      <ToolBar fx:id="mainToolbar">
+        <items>
+          <Button fx:id="addFolders" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#addFolders" />
+            <Button fx:id="removeFolders" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#removeSelection" />
+            <Separator orientation="VERTICAL" />
+            <Button fx:id="scanFolders" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#scanForDuplicateFiles" />
+            <Button fx:id="removeDuplicates" contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#removeDuplicates"/>
+        </items>
+      </ToolBar>
+      <SplitPane dividerPositions="0.25" orientation="VERTICAL" prefHeight="393.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                   <fx:include fx:id="SearchDirectory" source="SearchDirectoryTable.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="241.0" prefWidth="598.0">
+               <children>
+                   <fx:include fx:id="ResultTable" source="ResultDuplicateFilesTable.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>

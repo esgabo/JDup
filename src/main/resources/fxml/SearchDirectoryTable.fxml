@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<TableView fx:id="directoryTable" editable="true" prefHeight="250.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.guajava.jdupmaster.fxml.controllers.SearchDirectoryTableController">
+   <columns>
+      <TableColumn fx:id="directoryColumn" editable="false" maxWidth="1.7976931348623157E308" minWidth="100.0" prefWidth="-1.0" resizable="false" sortable="false" text="Directory" />
+      <TableColumn fx:id="recursiveSearchColumn" maxWidth="70.0" minWidth="0.0" prefWidth="70.0" resizable="false" sortable="false" text="Recursive" />
+   </columns>
+</TableView>
