@@ -2,8 +2,7 @@
 
 ### What is this repository for? ###
 
-* Quick summary
-	Java application to find and process duplicate files. It uses JavaFX, Spring Boot.
+* Java application to find and process duplicate files. It uses JavaFX, Spring Boot.
 * Version 0.1
 
 ### How do I get set up? ###
