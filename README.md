@@ -3,13 +3,13 @@
 ### What is this repository for? ###
 
 * Quick summary
-	Java application to find and process duplicate files
+	Java application to find and process duplicate files. It uses JavaFX, Spring Boot.
 * Version 0.1
 
 ### How do I get set up? ###
 
 * Summary of set up
-	Use Maven
+	Use Maven to build
 
 ### Who do I talk to? ###
 
@@ -24,5 +24,6 @@
 * Test using parallelStream instead
 * Fix glitchy Result Table Menu Items
 * Profile Memory use
-* Feature "Similar Files" additional to existen "Fully equal"
-
+* Feature "Similar Files" additional to existent "Fully equal"
+* Show summary after finding duplicates (Total size of duplication, etc)
+* Costemtic adjustments
